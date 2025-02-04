@@ -1,0 +1,95 @@
+@media (max-width: 800px) {
+	.contacts {
+		flex-wrap: wrap;
+
+		p {
+			text-align: center;
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.title {
+		font-size: 60px;
+	}
+
+	.subtitle {
+		font-size: 40px;
+	}
+
+	.description {
+		font-size: 25px;
+	}
+
+	.description {
+		font-size: 20px;
+	}
+
+	.skills {
+		font-size: 25px;
+	}
+
+	.contacts p {
+		width: 100%;
+
+		font-size: 30px;
+		margin: 15px 0;
+	}
+
+	.project-card {
+		&__title {
+			font-size: 25px;
+		}
+
+		&__stack {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 425px) {
+	.title {
+		font-size: 55px;
+	}
+
+	.subtitle {
+		font-size: 35px;
+	}
+
+	.warn {
+		font-size: 20px;
+	}
+
+	.skills {
+		font-size: 20px;
+	}
+
+	.contacts p {
+		font-size: 20px;
+	}
+	
+	.project-card {
+		&__title {
+			font-size: 20px;
+		}
+
+		&__img {
+			width: 292px;
+			height: 212px;
+		}
+	}
+
+	.header {
+		&__link {
+			padding: 0px 5px;
+
+			font-size: 40px;
+		}
+	}
+
+	#darkMode {
+		width: 50px;
+		height: 50px;
+	}
+}

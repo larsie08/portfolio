@@ -1,0 +1,21 @@
+@import "../variables";
+
+#darkMode {
+	width: 64px;
+	height: 64px;
+	
+	background: transparent url("../../assets/img/dark-mode/moon.svg") no-repeat
+		center center/contain;
+	border: none;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+
+	&:hover {
+		transform: rotate(20deg);
+	}
+}
+
+#darkMode.clicked {
+	background: transparent url("../../assets/img/dark-mode/sun.svg") no-repeat
+		center center/contain;
+}

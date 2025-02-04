@@ -1,0 +1,168 @@
+@import "variables";
+
+body {
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	transition: .3s linear;
+}
+
+body.dark {
+	background-color: $background-dark;
+	color: $font-light;
+
+	a {
+		color: $contrast-dark;
+	}
+
+	a:hover {
+		color: $font-light;
+	}
+
+	.header {
+		&__link {
+			color: $contrast-dark;
+		}
+	}
+
+	.project-card {
+		&__stack {
+			color: $font-light;
+		}
+
+		&__refs {
+			a {
+				background-color: $contrast-dark;
+				color: $font-light;
+			}
+	
+			a:hover {
+				background-color: $contrast-dark-hover;
+			}
+		}
+	}
+	
+}
+
+body.light {
+	background-color: $background-light;
+	color: $font-dark;
+
+	.title,
+	.subtitle {
+		color: $font-dark;
+	}
+
+	.header {
+		&__link {
+			color: $font-dark;
+
+			&:hover {
+				color: #ff8100;
+			}
+		}
+	}
+
+	.project-card {
+		&__stack {
+			color: $font-light;
+		}
+
+		&__refs {
+			a {
+				background-color: $contrast-light;
+				color: $font-light;
+			}
+	
+			a:hover {
+				background-color: $contrast-light-hover;
+			}
+		}
+	}
+
+	.contacts p a {
+		color: #ff8100;
+
+		&:hover {
+			color: $contrast-light-hover;
+		}
+	}
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: underline;
+	transition: color .2s ease-in-out;
+	color: #000;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px 30px;
+	margin: 0 auto;
+}
+
+// Blocks
+
+.title {
+	font-size: 95px;
+	font-weight: bold;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 50px;
+	margin: 60px 0 30px;
+	text-align: center;
+}
+
+.description {
+	font-size: 25px;
+}
+
+.projects,
+.mini-projects {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.mini-projects {
+    .project-card {
+        &__img {
+            width: 292px;
+	        height: 212px;
+        }
+    }
+}
+
+.skills {
+	font-size: 35px;
+	
+	margin: 0;
+
+	li {
+		margin-bottom: 15px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.contacts {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	font-size: 35px;
+}
