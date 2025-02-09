@@ -18,5 +18,11 @@ export default function DarkMode() {
     setTheme(newTheme);
   };
 
-  return <button onClick={switchTheme} id="darkMode"></button>;
+  return (
+    <button
+      onClick={switchTheme}
+      className={theme === "dark" ? "clicked" : ""}
+      id="darkMode"
+    ></button>
+  );
 }
